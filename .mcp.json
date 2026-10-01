@@ -1,0 +1,1 @@
+{ "mcpServers": { "claude-eyes": { "command": "npx", "args": ["claude-eyes"] } } }

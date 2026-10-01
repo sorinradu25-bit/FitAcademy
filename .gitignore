@@ -1,0 +1,6 @@
+# Machine-local Claude Code settings
+.claude/settings.local.json
+.claude/.gsd-staging/
+
+# OS
+.DS_Store
