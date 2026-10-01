@@ -68,11 +68,11 @@ Fiecare pas important are un commit separat în git. Istoricul arată astfel:
 |---|--------|------------|
 | 1 | `ff20583 docs: initialize project` | `PROJECT.md`, viziunea sintetizată din Google Doc-ul tău plus răspunsurile tale |
 | 2 | `98be092 chore: add project config` | `config.json`, cu preferințele de lucru |
-| 3 | `a61b451 chore: add GSD project tooling and MCP config` | instalarea locală GSD (`.claude/`), `.mcp.json`, `.gitignore` (făcut la cererea ta, „commit the working tree”) |
-| 4 | `d8f2a1d docs: complete project research` | cele 4 rapoarte de cercetare |
-| 5 | `f9e4a14 docs: add research summary` | `SUMMARY.md`, sinteza cercetării |
-| 6 | `daa5a17 docs: define v1 requirements` | `REQUIREMENTS.md`, cu 53 de cerințe |
-| 7 | `b55a490 docs: create roadmap (7 phases)` | `ROADMAP.md`, `STATE.md`, `.claude/CLAUDE.md` |
+| 3 | `729346a chore: add MCP config and gitignore` | `.mcp.json` + `.gitignore` (uneltele GSD au fost scoase ulterior din istoric, vezi secțiunea 12) |
+| 4 | `47020e4 docs: complete project research` | cele 4 rapoarte de cercetare |
+| 5 | `85d0af5 docs: add research summary` | `SUMMARY.md`, sinteza cercetării |
+| 6 | `c7aacfb docs: define v1 requirements` | `REQUIREMENTS.md`, cu 53 de cerințe |
+| 7 | `f7ee384 docs: create roadmap (7 phases)` | `ROADMAP.md`, `STATE.md`, `.claude/CLAUDE.md` |
 
 ### Pasul 1: inițializare
 - Folderul `/Users/macbookpro/Claude` nu era un repo git, așa că am rulat `git init`.
@@ -424,8 +424,8 @@ Deciziile sunt salvate în `.planning/phases/01-walking-skeleton-secure-accounts
 ### Ce aș face diferit sau ce se poate îmbunătăți în procesul de până acum
 | Problemă | Detalii | Propunere |
 |----------|---------|-----------|
-| `.claude/` e în git | Commit-ul 3 conține **795 de fișiere și ~15 MB** de unelte GSD. Pe GitHub ar aglomera repo-ul și ar ascunde codul tău. | Le scoatem din istoric (vezi secțiunea 12) |
-| `.planning/research/.cache/` e în git | 13 fișiere JSON de cache, fără valoare pentru cititor | Le scoatem și le adăugăm în `.gitignore` |
+| `.claude/` era în git | 795 de fișiere și ~15 MB de unelte GSD | ✅ Rezolvat: scos din istoric, ignorat |
+| `.planning/research/.cache/` era în git | 13 fișiere de cache | ✅ Rezolvat: scos din istoric, ignorat |
 | Sinteza a eșuat cu haiku | Am reparat manual | Profilul Balanced pentru sinteze importante |
 | Limba | Întrebările au fost în engleză | Setăm limba răspunsurilor la română |
 | WORK-07 adăugat fără întrebare directă | L-am semnalat, iar tu ai aprobat lista | — |
@@ -468,7 +468,7 @@ Codul va apărea, conform documentului tău, în: `apps/api` (FastAPI), `apps/mo
 ## 12. Cum îl pui pe GitHub ca să arate bine la interviu
 
 ### Unde e proiectul acum
-Pe Mac-ul tău, în `/Users/macbookpro/Claude`. E deja un repo git cu 7+ commit-uri și nu trebuie „descărcat”. Dacă vrei o arhivă, poți crea un zip doar cu fișierele urmărite de git:
+Pe Mac-ul tău, în `/Users/macbookpro/Claude`. E deja un repo git cu 10 commit-uri și nu trebuie „descărcat”. Dacă vrei o arhivă, poți crea un zip doar cu fișierele urmărite de git:
 ```bash
 git -C /Users/macbookpro/Claude archive --format=zip -o ~/Desktop/fitacademy.zip HEAD
 ```
@@ -482,8 +482,8 @@ git -C /Users/macbookpro/Claude archive --format=zip -o ~/Desktop/fitacademy.zip
 6. **ADR-uri în `docs/adr/`:** fiecare decizie importantă, cu motivul ei. Intervievatorii apreciază mult asta.
 
 ### Planul propus
-1. **Curățare** (cu acordul tău): rescriem istoricul local ca să nu mai conțină `.claude/` și `.cache/`. E sigur acum, pentru că **nimic nu a fost încă publicat**. Uneltele rămân pe disc, doar ignorate de git.
-2. **Tag** `v0.1-planning` pe starea curentă: „planificare completă”.
+1. ✅ **Curățare făcută:** istoricul nu mai conține `.claude/` și `.cache/`. Uneltele rămân pe disc, ignorate de git. Repo-ul are acum doar 14 fișiere urmărite, toate relevante.
+2. ✅ **Tag `v0.1-planning`** pus pe starea curentă: „planificare completă”.
 3. **Creare repo GitHub și push.** Trebuie să te autentifici tu (`gh auth login`), apoi:
    ```bash
    gh repo create fitacademy --private --source=/Users/macbookpro/Claude --push
