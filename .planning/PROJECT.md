@@ -82,8 +82,8 @@ A user can quickly log what they eat and how they train, and get back clear, exp
 | Coach text via templates in v1, LLM later | Determinism and safety first; LLM is a presentation layer only | — Pending |
 | Minimal web admin in v1 (foods, exercises, users) | Need a way to curate data without raw DB access | — Pending |
 | English + Romanian i18n from day 1 | Serves local friends and broader portfolio audience | — Pending |
-| Mobile framework: TBD after research (Python preference noted) | Needs a camera/barcode and app-store readiness comparison | — Pending |
-| Food data source: TBD after research | Coverage vs licensing vs quality trade-off | — Pending |
+| Mobile: React Native + Expo (TypeScript); Python stays server-side | Research: built-in barcode scanning, store readiness, shares TS with Next.js admin; Python-native mobile too immature | — Pending |
+| Food data: USDA FDC core (CC0) + Open Food Facts for barcodes (bulk RO import + throttled live lookup), per-row provenance | Research: best coverage for RO barcodes; ODbL handled via provenance + attribution | — Pending |
 | v1 "done" = backend deployed + author logs meals/workouts daily for 2+ weeks | Real usage validates the core loop | — Pending |
 
 ## Evolution
