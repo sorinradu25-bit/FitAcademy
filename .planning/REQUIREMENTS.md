@@ -143,12 +143,65 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
+| AUTH-01 | Phase 1 | Pending |
+| AUTH-02 | Phase 1 | Pending |
+| AUTH-03 | Phase 1 | Pending |
+| AUTH-04 | Phase 1 | Pending |
+| AUTH-05 | Phase 1 | Pending |
+| AUTH-06 | Phase 1 | Pending |
+| PROF-01 | Phase 2 | Pending |
+| PROF-02 | Phase 2 | Pending |
+| PROF-03 | Phase 2 | Pending |
+| PROF-04 | Phase 2 | Pending |
+| PROF-05 | Phase 2 | Pending |
+| PROF-06 | Phase 2 | Pending |
+| PROF-07 | Phase 2 | Pending |
+| PROF-08 | Phase 2 | Pending |
+| NUTR-01 | Phase 3 | Pending |
+| NUTR-02 | Phase 3 | Pending |
+| NUTR-03 | Phase 3 | Pending |
+| NUTR-04 | Phase 3 | Pending |
+| NUTR-05 | Phase 3 | Pending |
+| NUTR-06 | Phase 4 | Pending |
+| NUTR-07 | Phase 4 | Pending |
+| NUTR-08 | Phase 4 | Pending |
+| NUTR-09 | Phase 4 | Pending |
+| NUTR-10 | Phase 4 | Pending |
+| NUTR-11 | Phase 3 | Pending |
+| NUTR-12 | Phase 3 | Pending |
+| BARC-01 | Phase 4 | Pending |
+| BARC-02 | Phase 4 | Pending |
+| BARC-03 | Phase 4 | Pending |
+| BARC-04 | Phase 4 | Pending |
+| BARC-05 | Phase 4 | Pending |
+| WORK-01 | Phase 5 | Pending |
+| WORK-02 | Phase 5 | Pending |
+| WORK-03 | Phase 5 | Pending |
+| WORK-04 | Phase 5 | Pending |
+| WORK-05 | Phase 5 | Pending |
+| WORK-06 | Phase 5 | Pending |
+| WORK-07 | Phase 5 | Pending |
+| WORK-08 | Phase 5 | Pending |
+| WORK-09 | Phase 5 | Pending |
+| WORK-10 | Phase 5 | Pending |
+| COACH-01 | Phase 6 | Pending |
+| COACH-02 | Phase 6 | Pending |
+| COACH-03 | Phase 6 | Pending |
+| COACH-04 | Phase 6 | Pending |
+| COACH-05 | Phase 6 | Pending |
+| COACH-06 | Phase 6 | Pending |
+| COACH-07 | Phase 6 | Pending |
+| ADMN-01 | Phase 7 | Pending |
+| ADMN-02 | Phase 7 | Pending |
+| PLAT-01 | Phase 1 | Pending |
+| PLAT-02 | Phase 1 | Pending |
+| PLAT-03 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 53 total
-- Mapped to phases: 0
-- Unmapped: 53 ⚠️
+- Mapped to phases: 53
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-10-01*
-*Last updated: 2026-10-01 after initial definition*
+*Last updated: 2026-10-01 after roadmap creation (traceability mapped)*
