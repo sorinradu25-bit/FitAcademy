@@ -1,6 +1,9 @@
-# Machine-local Claude Code settings
-.claude/settings.local.json
-.claude/.gsd-staging/
+# Local AI tooling (GSD workflow install, Claude Code settings)
+.claude/
+
+# GSD research cache and in-progress discussion checkpoints
+.planning/research/.cache/
+.planning/phases/*/*-DISCUSS-CHECKPOINT.json
 
 # OS
 .DS_Store
